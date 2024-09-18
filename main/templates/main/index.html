@@ -42,17 +42,33 @@ Start Content
         </div>
         <div class="col-md">
           <div class="bannerContent">
-            <h1 class="xlTitle pb-3">Hi, I’m {{me.first_name|title}}, <br> a {{me.userprofile.title}} </br></h1>
+
+            <!-- SALUDO Y NAME -->
+            <h1 class=" h1Saludo pb-3">Hi, I’m {{me.first_name|title}}, <br> a {{me.userprofile.title}} 
+            </br></h1>
+
             <p>{{me.userprofile.bio}}</p>
+
             <div class="bannerBtnCol">
-              <div class="row">
+
+
+              <!-- BOTONES PRESENTACIÓN -->
+              <div class="row pt-3">
+
+                <!-- DOWNLOAD -->
                 <div class="col-auto">
-                  <a download href="{{me.userprofile.cv.url}}" class="btn btnPrimary">Download Resume</a>
+                  <a download href="{{me.userprofile.cv.url}}" class="btnDownload">Download Resume</a>
                 </div>
+                <!-- Contacto -->
                 <div class="col-auto">
-                  <a href="{% url 'main:contact' %}" class="btn btnOutline">Contact</a>
+                  <a href="{% url 'main:contact' %}" class="btnDownload">Contact</a>
                 </div>
+
+
               </div>
+
+
+
             </div>
           </div>
         </div>
@@ -61,7 +77,7 @@ Start Content
   </div>
 </section>
 
-<section>
+<!-- <section>
   <div class="sectionSpace pt-0">
     <div class="container">
       <div class="row">
@@ -111,6 +127,9 @@ Start Content
     </div>
   </div>
 </section>
+
+
+
 
 <section>
   <div class="sectionSpaceSm lightBg">
@@ -257,6 +276,8 @@ Start Content
     </div>
   </div>
 </section>
+ -->
+
 {% endblock %}
 <!-- ================================
 End Content

@@ -1,0 +1,66 @@
+@font-face {
+    font-family: DAN;
+    src: url("https://cdn.glitch.global/1021c9b8-00d4-484d-9f55-ba2265ed9ecc/Dancetech.otf?v=1678588498961");
+}
+
+/* TEXTO */
+.bannerContent h1:hover {
+    /*TAMAÑO*/
+/*     transform: scale(1.1, 1.1);
+ */
+    background-image: linear-gradient(to right, #ff2d2d, #000000);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: 0.5s;
+}
+
+.h1Saludo{
+    /* Fuente */
+    font-family: DAN;
+    color: black;
+    /* Tamaño */
+    font-size: 50px;
+    /* Crusor */
+}
+
+
+
+.btnDownload {
+
+    /*fuente*/
+    color: black;
+    /*fondo*/
+    background-color:transparent;
+
+    /*BORDE*/
+    border: 2px solid black;
+
+
+    transition: 0.5s;
+
+    margin-bottom: 6%;
+
+    /*tamaño*/
+    padding: 5px 10px  5px 10px   ;
+    font-size: 14px;
+}
+
+.btnDownload:hover {
+   
+  
+    background-color: #ff2d2d;
+    cursor: pointer;
+    color: white;
+   
+    border: 2px solid #ff2d2d;
+    transition: 0.5s;
+}
+
+
+.copyrightCol a:hover{
+    color: #ff2d2d;
+    transition: 0.5s;
+
+}
